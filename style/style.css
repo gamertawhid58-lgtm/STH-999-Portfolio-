@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+        color: red;
+    background-color: black;
+    text-shadow: 0 0 2px yellow;
+    overflow-x: hidden;
+}
+
+/* now the starting */
+.introduction{
+    display: flex;;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.starting{
+    font-size: 3rem;
+    text-align: center;
+    color: red;
+    margin-bottom: 30px;
+}
+.title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.i_am{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.subtitle{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 30px;
+}
+.description{
+    font-size: 2.2rem;
+}
+/* about skills in card format */
+.skills_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.skills_cards_h1{
+    margin-top: 9vh;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+.html{
+    max-width: 350px;
+    margin-top: 7vh;
+    text-align: center;
+    box-shadow:  0 0 15px 15px red;
+    margin-left: 25px;
+}
+.classForHtmlSkill_H1{
+    font-size: 45px;
+    opacity: 0.9;
+}
+
+.html_p{
+    font-size: 28px;
+    margin-top: 25px;
+    opacity: 0.9;
+}
+.css{
+      max-width: 350px;
+    margin-top: 7vh;
+    text-align: center;
+    box-shadow:  0 0 15px 15px red;
+}
+.headingForCss{
+    font-size: 45px;
+    opacity: 0.9;
+}
+.css_p{
+    font-size: 28px;
+    margin-top: 25px;
+    opacity: 0.9;
+}
+.javascript{
+    
+    max-width: 350px;
+    margin-top: 7vh;
+    text-align: center;
+    box-shadow:  0 0 15px 15px red;
+}
+.headingForJs{
+    font-size: 45px;
+    opacity: 0.9;
+}
+.css_p{ 
+    font-size: 28px;
+    margin-top: 25px;
+    opacity: 0.9;
+}
+/*End of skill cards*/
+/* img */
+.STH-999-logo{
+    width: 60vh;
+    margin-left: 10%;
+    margin-right: 100px;
+}
+.sup_img{
+display: flex;
+}
+
+/* animations */
+#dynamic-text{
+    color: gold;
+}
