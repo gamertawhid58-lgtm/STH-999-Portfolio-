@@ -5,13 +5,24 @@
 body{
         color: red;
     background-color: black;
-    text-shadow: 0 0 2px yellow;
+    text-shadow: 0 0 2px blue;
     overflow-x: hidden;
 }
+.blinking-box{
+    background-color: red;
+    animation: blink 0.5s infinite alternate;
+    text-align: center;
+    color: yellow;
+}
+/*nav*/
+
+
+
+/*ending of nav*/
 
 /* now the starting */
 .introduction{
-    display: flex;;
+    display: flex;
     flex-direction: column;
     width: 80%;
     margin-top: 25px;
@@ -23,6 +34,9 @@ body{
     color: red;
     margin-bottom: 30px;
 }
+.starting:hover{
+    color: yellow;
+}
 .title{
     font-size: 2.5rem;
     text-align: center;
@@ -30,23 +44,36 @@ body{
     margin-bottom: 10px;
     margin-right: 50px;
 }
+.title:hover{
+    color: yellow;
+}
 .i_am{
     font-size: 2.5rem;
     text-align: center;
+}
+.i_am:hover{
+    color: blue;
 }
 .subtitle{
     font-size: 2rem;
     text-align: center;
     margin-top: 30px;
 }
+.subtitle:hover{
+    color: blue;
+}
 .description{
     font-size: 2.2rem;
 }
+
+
 /* about skills in card format */
+
 .skills_cards{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .skills_cards_h1{
     margin-top: 9vh;
@@ -61,11 +88,24 @@ body{
     box-shadow:  0 0 15px 15px red;
     margin-left: 25px;
 }
+.html:hover{
+    box-shadow:  0 0 50px 25px blue;
+    color: blue;
+}
+.html:hover > h1{
+    font-size: 50px;
+}
+.html:hover > p{
+    font-size: 30px;
+}
 .classForHtmlSkill_H1{
     font-size: 45px;
     opacity: 0.9;
 }
-
+.skills_cards_h1:hover{
+    color: white;
+    color: blue;
+}
 .html_p{
     font-size: 28px;
     margin-top: 25px;
@@ -76,6 +116,16 @@ body{
     margin-top: 7vh;
     text-align: center;
     box-shadow:  0 0 15px 15px red;
+}
+.css:hover{
+    box-shadow:  0 0 50px 25px blue;
+    color: blue 
+}
+.css:hover > h1{
+    font-size: 50px;
+}
+.css:hover > p{
+    font-size: 30px;
 }
 .headingForCss{
     font-size: 45px;
@@ -93,6 +143,16 @@ body{
     text-align: center;
     box-shadow:  0 0 15px 15px red;
 }
+.javascript:hover{
+    box-shadow:  0 0 50px 25px blue;
+    color: blue 
+}
+.javascript:hover > h1{
+    font-size: 50px;
+}
+.javascript:hover > p{
+    font-size: 30px;
+}
 .headingForJs{
     font-size: 45px;
     opacity: 0.9;
@@ -102,8 +162,24 @@ body{
     margin-top: 25px;
     opacity: 0.9;
 }
+.js_p{
+    font-size: 28px;
+    margin-top: 25px;
+    opacity: 0.9; 
+}
+
 /*End of skill cards*/
+/* break */
+
+
+
+/*starting of projects*/
+
+
+
+/*ending of project*/
 /* img */
+
 .STH-999-logo{
     width: 60vh;
     margin-left: 10%;
@@ -116,4 +192,16 @@ display: flex;
 /* animations */
 #dynamic-text{
     color: gold;
+}
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.9; }
+}
+
+.Evil-eye{
+    margin-top: 95px;
+    width: 100%;
+    height: 50vh;
+    margin-left: 20px;
+    margin-right: 20px;
 }
