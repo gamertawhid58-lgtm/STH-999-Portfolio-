@@ -1,10 +1,10 @@
 let dynamicTextForHtml = document.getElementById("dynamic-text");
 let color_changing_texts = document.getElementById("color_changer_text");
 let myRoles = ["Web-Developer","Front-end-Developer","Content-Creator"];
-let colors = ["yellow","black","blue","red"]
+let colors = ["blue","red"]
 let index = 0;
 let index2 = 0;
-let index3 = 1;
+let index3 = 0;
 
 
 function Dynamic_text() {
@@ -28,7 +28,7 @@ index2++;
 
 function Dynamic_text_color2() {
     if (index3 === colors.length) {
-        index3 = 1;
+        index3 = 0;
     }
 dynamicTextForHtml.style.color = colors[index3];
 index3++;
@@ -38,6 +38,6 @@ Dynamic_text_color()
 Dynamic_text();
 Dynamic_text_color2
 
-setInterval(Dynamic_text_color2,200)
+setInterval(Dynamic_text_color2,400)
 setInterval(Dynamic_text , 600);
 setInterval(Dynamic_text_color,450)
