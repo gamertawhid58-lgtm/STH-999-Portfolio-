@@ -228,7 +228,8 @@ body{
 .STH-999-logo:hover{
     opacity: 1;
     width: 60vh;
-    content: url('/assets/STH-999\ logo\ blue.png');
+    background-image: url('assets/STH-999-logo-blue.png');
+    content: url('/assets/STH-999-logo-blue.png');
 }
 .sup_img{
 display: flex;
