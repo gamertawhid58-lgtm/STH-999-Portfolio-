@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: red;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.makeItBlue{
+    color: blue;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 50px;
+}
+.linksIntoButton{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-shadow: 0px 0px 3px gold;
+}

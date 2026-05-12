@@ -15,7 +15,26 @@ body{
     color: blue;
 }
 /*nav*/
-
+svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  color: #3498db;
+}
+.all_navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.navBtn{
+    border: 2px solid blue;
+    padding: 5px 20px;
+    background-color: black;
+    box-shadow: 0px 0px 50px blue;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 10px;
+}
 
 
 /*ending of nav*/
@@ -215,21 +234,13 @@ body{
 /*ending of project*/
 /* img */
 
-.STH-999-logo{
+.sth-logo {
     width: 60vh;
+    height: auto;
     margin-left: 10%;
     margin-right: 100px;
-    transition: 0.4s;
     cursor: pointer;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.STH-999-logo:hover{
-    opacity: 1;
-    width: 60vh;
-    background-image: url('assets/STH-999-logo-blue.png');
-    content: url('/assets/STH-999-logo-blue.png');
+    transition: all 0.3s ease;
 }
 .sup_img{
 display: flex;
@@ -254,7 +265,7 @@ display: flex;
 }
 @keyframes blink {
     from { opacity: 1; }
-    to { opacity: 0.9; }
+    to { opacity: 0.850; }
 }
 .Evil-eye{
     margin-top: 95px;

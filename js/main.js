@@ -36,8 +36,18 @@ index3++;
 
 Dynamic_text_color()
 Dynamic_text();
-Dynamic_text_color2
+Dynamic_text_color2()
 
 setInterval(Dynamic_text_color2,400)
 setInterval(Dynamic_text , 600);
 setInterval(Dynamic_text_color,450)
+
+const logo = document.querySelector('.sth-logo');
+const originalSrc = logo.src;
+
+logo.addEventListener('mouseover', () => {
+    logo.src = logo.src.replace(/[^/]+$/, 'STH-999-logo-blue.png');
+});
+logo.addEventListener('mouseout', () => {
+    logo.src = originalSrc;
+});

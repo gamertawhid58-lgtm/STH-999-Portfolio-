@@ -10,7 +10,11 @@
 <body>
     <header>
         <nav>
-            <a target="_blank" class="boxOfNav" href="./index.html" id="home">HOME</a target="_blank">
+            <div class="all_navigation">
+                <a class="navBtn" href="./index.html"><i data-lucide="house"></i></a>
+                <a class="navBtn" href="./projects.html"><i data-lucide="notebook-text"></i></a>
+                <a class="navBtn" href="./assets/STH-999-C.V.pdf" download="STH-999-CV" class="C.V_BUTTON"><i data-lucide="download"></i> Download C.V</a>
+            </div>
         </nav>
         <h1 id="color_changer_text" class="blinking-box">STH-999</h1>
     </header>
@@ -29,7 +33,10 @@ from Bangladesh.
             </p>
         </div>
         <div class="image-holder">
-            <img class="STH-999-logo" src="./assets/STH-999 logo.png" alt="STH-999 logo">
+           <img class="sth-logo" 
+     src="./assets/STH-999 logo.png" 
+     data-hover="./assets/STH-999-logo-blue.png" 
+     alt="STH-999 logo">
         </div>
         </div>
     </section>
@@ -89,10 +96,17 @@ from Bangladesh.
         </div>
      </div>
     </section>
+
+
+
     </main>
     <footer>
 
     </footer>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
