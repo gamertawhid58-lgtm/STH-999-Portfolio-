@@ -3,9 +3,10 @@
     margin: 0;
 }
 body{
-        color: red;
+    color: red;
     background-color: black;
     text-shadow: 0 0 2px blue;
+    width: 100%;
     overflow-x: hidden;
 }
 .blinking-box{
@@ -34,7 +35,37 @@ svg {
     text-decoration: none;
     font-size: 24px;
     border-radius: 10px;
+    color: red;           
+    display: flex;        
+    align-items: center;  
+    gap: 8px; 
+    margin-top: 20px;
 }
+.projectText{
+    padding: 5px 20px;
+    background-color: black;
+    box-shadow: 0px 0px 50px blue;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 10px;
+    color: red;           
+    display: flex;        
+    align-items: center;  
+    gap: 8px;
+}
+.homeHtml{
+    padding: 5px 20px;
+    background-color: black;
+    box-shadow: 0px 0px 50px blue;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 10px;
+    color: red;           
+    display: flex;        
+    align-items: center;  
+    gap: 8px;
+}
+
 
 
 /*ending of nav*/
@@ -276,4 +307,20 @@ display: flex;
 }
 #dynamic-text, #color_changer_text {
     transition: color 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 688px) {
+    .cvButtonTexts {
+        display: none !important;
+    }
+    .navBtn {
+        padding: 10px;
+        border: 2px solid red;
+    }
+    .homeHtml{
+        display: none !important;
+    }
+    .projectText{
+        display: none;
+    }
 }
