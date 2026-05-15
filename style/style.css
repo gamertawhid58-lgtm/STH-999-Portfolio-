@@ -111,7 +111,6 @@ svg {
 }
 .subtitle:hover{
     color: blue;
-    font-size: 32.05px;
 }
 .description{
     font-size: 2.2rem;
@@ -219,12 +218,13 @@ svg {
     font-size: 3rem;;
     text-align: center;
     margin-bottom: 20px;
-    color: blue;
+    color: yellow;
     margin-bottom: 80px;
     text-align: center;
+    text-decoration: underline;
 }
 .h2ForProjects:hover{
-    color: red;
+    color: white;
 }
 .projectsBySTH-999{
     font-size: 1.5rem;
@@ -268,8 +268,6 @@ svg {
 .sth-logo {
     width: 60vh;
     height: auto;
-    margin-left: 10%;
-    margin-right: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -309,18 +307,220 @@ display: flex;
     transition: color 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 688px) {
+/* Tablet — 768px and below */
+@media screen and (max-width: 768px) {
+ 
+    /* Nav */
+    .all_navigation {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .navBtn {
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+ 
+    /* Header title */
+    #color_changer_text {
+        font-size: 2rem;
+    }
+ 
+    /* Section 1 — intro + image */
+    .sup_img {
+        flex-direction: column;
+        align-items: center;
+    }
+    .introduction {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+    }
+    .sth-logo {
+        width: 45vh;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+    .starting {
+        font-size: 2.2rem;
+    }
+    .title {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+    .i_am {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 1.8rem;
+    }
+ 
+    /* Section 2 — skill cards */
+    .skills_cards_h1 {
+        font-size: 2.2rem;
+        margin-bottom: 5vh;
+    }
+    .skills_cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .html, .css, .javascript {
+        max-width: 90%;
+        margin-left: 0;
+    }
+    .classForHtmlSkill_H1,
+    .headingForCss,
+    .headingForJs {
+        font-size: 36px;
+    }
+    .html_p, .css_p, .js_p {
+        font-size: 20px;
+    }
+ 
+    /* Section 3 — projects */
+    .h2ForProjects {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    .project_cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .projectsBySTH-999 {
+        font-size: 1.3rem;
+        margin-top: 20px;
+    }
+ 
+    /* Section 4 — contact */
+    .my-contact {
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+    .sec4_socialLinks {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .WhatsappImg {
+        width: 12vh;
+        margin-right: 0;
+    }
+    .facebookImg {
+        width: 10vh;
+        margin-right: 0;
+    }
+    .Instragram {
+        width: 10vh;
+    }
+ 
+    /* Video */
+    .Evil-eye {
+        margin-left: 0;
+        margin-right: 0;
+        height: 35vh;
+    }
+}
+ 
+/* Mobile — 480px and below */
+@media screen and (max-width: 480px) {
+ 
+    /* Nav */
+    .navBtn {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
     .cvButtonTexts {
         display: none !important;
     }
-    .navBtn {
-        padding: 10px;
-        border: 2px solid red;
-    }
-    .homeHtml{
+    .homeHtml {
         display: none !important;
     }
-    .projectText{
-        display: none;
+    .projectText {
+        display: none !important;
+    }
+ 
+    /* Header title */
+    #color_changer_text {
+        font-size: 1.6rem;
+    }
+ 
+    /* Section 1 */
+    .starting {
+        font-size: 1.6rem;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .i_am {
+        font-size: 1.6rem;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    .description {
+        font-size: 1.3rem;
+    }
+    .sth-logo {
+        width: 80%;
+    }
+ 
+    /* Section 2 */
+    .skills_cards_h1 {
+        font-size: 1.6rem;
+        padding: 0 10px;
+    }
+    .html, .css, .javascript {
+        max-width: 75%;
+        padding: 10px;
+    }
+.javascript:hover{
+    box-shadow:  0 0 20px 25px blue;
+    color: blue 
+}
+    .classForHtmlSkill_H1,
+    .headingForCss,
+    .headingForJs {
+        font-size: 28px;
+    }
+    .html_p, .css_p, .js_p {
+        font-size: 16px;
+    }
+ 
+    /* Section 3 */
+    .h2ForProjects {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+    }
+    .projectsBySTH-999 {
+        font-size: 1.1rem;
+    }
+ 
+    /* Section 4 */
+    .my-contact {
+        font-size: 1.1rem;
+        margin-top: 40px;
+        padding: 0 15px;
+    }
+    .WhatsappImg {
+        width: 10vh;
+    }
+    .facebookImg {
+        width: 9vh;
+    }
+    .Instragram {
+        width: 9vh;
+    }
+ 
+    /* Video */
+    .Evil-eye {
+        height: 25vh;
+        margin-top: 40px;
     }
 }
